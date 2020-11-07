@@ -22,7 +22,7 @@ Not much to explain here.
 [![](https://jitpack.io/v/Luziferium/SpectatorPlus-API.svg)](https://jitpack.io/#Luziferium/SpectatorPlus-API)
 Just add this to your pom.xml: 
 
-Repository
+Add the JitPack repository to your build file 
 ```java
 	<repositories>
 		<repository>
@@ -32,13 +32,35 @@ Repository
 	</repositories>
 ```
 
-Dependency
+Add the dependency
 ```java
 	<dependency>
 	    <groupId>com.github.Luziferium</groupId>
 	    <artifactId>SpectatorPlus-API</artifactId>
-	    <version>version</version>
+	    <version>1.0.0</version>
 	</dependency>
+```
+
+### Gradle
+
+Add the JitPack repository to your build file 
+Add it in your root build.gradle at the end of repositories:
+```java
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+Add the dependency
+```java
+
+	dependencies {
+	        implementation 'com.github.Luziferium:SpectatorPlus-API:Tag'
+	}
+
 ```
 
 # How to use
