@@ -22,7 +22,7 @@ Not much to explain here.
 Just add this to your pom.xml:
 
 Repository
-```javav
+```java
 <repository>
     <id>jitpack.io</id>
     <url>https://jitpack.io</url>
