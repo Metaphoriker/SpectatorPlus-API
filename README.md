@@ -23,19 +23,21 @@ Just add this to your pom.xml:
 
 Repository
 ```java
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 ```
 
 Dependency
 ```java
-<dependency>
-    <groupId>com.github.Luziferium</groupId>
-    <artifactId>SpectatorPlus-API</artifactId>
-    <version>--------</version>
-</dependency>
+	<dependency>
+	    <groupId>com.github.Luziferium</groupId>
+	    <artifactId>SpectatorPlus-API</artifactId>
+	    <version>version</version>
+	</dependency>
 ```
 
 # How to use
