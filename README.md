@@ -37,7 +37,7 @@ Add the dependency
 	<dependency>
 	    <groupId>com.github.Luziferium</groupId>
 	    <artifactId>SpectatorPlus-API</artifactId>
-	    <version>v1.0.0</version>
+	    <version>version</version>
 	</dependency>
 ```
 
@@ -58,7 +58,7 @@ Add the dependency
 ```java
 
 	dependencies {
-	        implementation 'com.github.Luziferium:SpectatorPlus-API:v1.0.0'
+	        implementation 'com.github.Luziferium:SpectatorPlus-API:version'
 	}
 
 ```
