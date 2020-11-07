@@ -19,7 +19,8 @@ You can simply implement the API into your Addon/Plugin by:
 Not much to explain here.
 
 ### Maven
-Just add this to your pom.xml:
+[![](https://jitpack.io/v/Luziferium/SpectatorPlus-API.svg)](https://jitpack.io/#Luziferium/SpectatorPlus-API)
+Just add this to your pom.xml: 
 
 Repository
 ```java
