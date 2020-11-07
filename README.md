@@ -22,25 +22,21 @@ Not much to explain here.
 Just add this to your pom.xml:
 
 Repository
-`
-
+```javav
 <repository>
     <id>jitpack.io</id>
     <url>https://jitpack.io</url>
 </repository>
-
-`
+```
 
 Dependency
-`
-
+```java
 <dependency>
     <groupId>com.github.Luziferium</groupId>
     <artifactId>SpectatorPlus-API</artifactId>
     <version>--------</version>
 </dependency>
-
-`
+```
 
 # How to use
 
@@ -48,19 +44,16 @@ Dependency
 
 For this purpose you will need a class:
 
-`
-
+```java
 public class TestMode {
 
 }
-
-`
+```
 
 This class we will now extend with SpectateMode:
 *This will add some methods to the class and make the class visible for the ClassLoader*
 
-`
-
+```java
 public class TestMode extends SpectateMode {
 
     @Override
@@ -84,8 +77,7 @@ public class TestMode extends SpectateMode {
     }
     
 }
-
-`
+```
 
 Now you just have to fill in the methods and there you go.
 
@@ -94,28 +86,24 @@ Now you just have to fill in the methods and there you go.
 You can modify a Spectator or create a Camera with accessing the managers.
 This can be easily done with the **SPApi.class**.
 
-`
-
+```java
 SpectatorManager spectatorManager = SPApi.getSpectatorManager();
 
 CameraManager cameraManager = SPApi.getCameraManager();
 
 SpectateModeManager specateModeManager = SPApi.getSpectateModeManager();
-
-`
+```
 
 ### Do something when a Spectator switch his SpectateMode
 
 I've also implemented a new Event, which gets fired, when a Spectator changes his SpectateMode.
 
-`
-
+```java
 @EventHandler
 public void onSwitch(SwitchSpectateModeEvent event) {
 
 // do something
 
 }
-
-`
+```
 
