@@ -11,7 +11,7 @@ The API is mainly intended to create new SpectateModes.
 The data of the Spectator can also be modified by using the API.
 Otherwise, a little bit more is possible and what you make possible.
 
-# How to implement
+# How to implement [![](https://jitpack.io/v/Luziferium/SpectatorPlus-API.svg)](https://jitpack.io/#Luziferium/SpectatorPlus-API)
 
 You can simply implement the API into your Addon/Plugin by:
 
@@ -19,7 +19,7 @@ You can simply implement the API into your Addon/Plugin by:
 Not much to explain here.
 
 ### Maven
-[![](https://jitpack.io/v/Luziferium/SpectatorPlus-API.svg)](https://jitpack.io/#Luziferium/SpectatorPlus-API)
+
 Just add this to your pom.xml: 
 
 Add the JitPack repository to your build file 
