@@ -87,8 +87,10 @@ public class TestMode extends SpectateMode {
     }
 
     @Override
-    public String getDescription() {
-        return ""; // here you can set the description of the SpectateMode. What does it do?
+    public List<String> getDescription() {
+    	List<String> desc = new ArrayList<>();
+	desc.add("");
+        return desc; // here you can set the description of the SpectateMode. What does it do?
     }
 
     @Override
