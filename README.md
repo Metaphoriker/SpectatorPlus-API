@@ -82,7 +82,7 @@ This class we will now extend with SpectateMode:
 public class TestMode extends SpectateMode {
 
     @Override
-    public void onEnable() {
+    public void onEnable(Plugin plugin) {
         // everything in here will be executed, when the SpectateMode gets loaded
     }
 
