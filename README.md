@@ -20,7 +20,7 @@ Not much to explain here.
 Just add this to your pom.xml: 
 
 Add the JitPack repository to your build file 
-```java
+```xml
 	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -30,7 +30,7 @@ Add the JitPack repository to your build file
 ```
 
 Add the dependency
-```java
+```xml
 	<dependency>
 	    <groupId>com.github.Luziferium</groupId>
 	    <artifactId>SpectatorPlus-API</artifactId>
