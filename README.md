@@ -2,10 +2,7 @@
 
 The following explains how and for what the API can be used.
 
-With the API you can create standalone Addons, which you can put into plugins/SpectatorPlus/SpectateModes.
-*The Spigot-API still have to be implemented*
-
-You can also implement the API into your plugin.
+With the API you can hook into the plugin.
 
 The API is mainly intended to create new SpectateModes.
 The data of the Spectator can also be modified by using the API.
@@ -76,15 +73,23 @@ public class TestMode {
 ```
 
 This class we will now extend with SpectateMode:
-*This will add some methods to the class and make the class visible for the ClassLoader*
 
 ```java
-public class TestMode extends SpectateMode {
 
-    @Override
-    public void onEnable(Plugin plugin) {
-        // everything in here will be executed, when the SpectateMode gets loaded
-    }
+/*
+
+Should your SpectateMode have a Camera?
+No problem! Just let your class implement "Camerable"
+
+Would look like this:
+public class TestMode extends SpectateMode implements Camerable { }
+
+This automatically assigns a camera to the Spectator, which you can modify in your code
+
+*/
+
+
+public class TestMode extends SpectateMode {
 
     @Override
     public List<String> getDescription() {
@@ -106,7 +111,20 @@ public class TestMode extends SpectateMode {
 }
 ```
 
-Now you just have to fill in the methods and there you go.
+Now you just have to fill in the methods and register the SpectateMode and there you go.
+
+How to register:
+
+```java
+// your onEnable() in your JavaPlugin class
+   @Override
+   public void onEnable() {
+   
+   SpectateModeManager spm = SPApi.getSpectateModeManager();
+   spm.register(new TestCheck());
+   
+   }
+```
 
 ### Accessing the managers
 
