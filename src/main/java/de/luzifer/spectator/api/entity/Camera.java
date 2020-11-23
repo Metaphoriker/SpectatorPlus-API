@@ -6,7 +6,6 @@ import org.bukkit.entity.Entity;
 
 /**
  * Represents a Camera
- * @author Luzifer
  */
 public interface Camera {
 
@@ -15,8 +14,7 @@ public interface Camera {
      *
      * @param location location where the camera looks at
      */
-    @NonNull
-    void lookAt(Location location);
+    void lookAt(@NonNull Location location);
 
     /**
      *
@@ -44,13 +42,14 @@ public interface Camera {
      *
      * @param height height of the camera
      */
-    void setHeight(double height);
+    void setHeight(@NonNull double height);
 
     /**
      * Get the height of the camera
      *
      * @return height of the camera
      */
+    @NonNull
     double getHeight();
 
     /**
@@ -58,14 +57,14 @@ public interface Camera {
      *
      * @param location the location the camera will teleported to
      */
-    @NonNull
-    void setCameraLocation(Location location);
+    void setCameraLocation(@NonNull Location location);
 
     /**
      * Get the current camera location
      *
      * @return location of the camera
      */
+    @NonNull
     Location getCameraLocation();
 
     /**
@@ -73,14 +72,14 @@ public interface Camera {
      *
      * @param location the location the camera will move around
      */
-    @NonNull
-    void setCenter(Location location);
+    void setCenter(@NonNull Location location);
 
     /**
      * Returns the center where the camera moves around
      *
      * @return the center where the camera moves around
      */
+    @NonNull
     Location getCenter();
 
     /**
@@ -88,13 +87,14 @@ public interface Camera {
      *
      * @param radius the radius in which the camera will move around the center
      */
-    void setRadius(double radius);
+    void setRadius(@NonNull double radius);
 
     /**
      * Get the radius in which the camera moves around the center
      *
      * @return the radius in which the camera moves around the center
      */
+    @NonNull
     double getRadius();
 
     /**
@@ -109,6 +109,7 @@ public interface Camera {
      *
      * @return the camera as entity
      */
+    @NonNull
     Entity asEntity();
 
 }

@@ -1,5 +1,6 @@
 package de.luzifer.spectator.api.manager;
 
+import de.luzifer.spectator.api.exceptions.DuplicateModeNameException;
 import de.luzifer.spectator.api.mode.SpectateMode;
 import lombok.NonNull;
 
@@ -23,7 +24,7 @@ public interface SpectateModeManager {
      * @param spectateMode the SpectateMode to register
      */
     @NonNull
-    void register(SpectateMode spectateMode);
+    void register(SpectateMode spectateMode) throws DuplicateModeNameException;
 
     /**
      * Deregister(unregister) a SpectateMode so it won't work anymore

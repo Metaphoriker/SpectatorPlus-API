@@ -13,7 +13,6 @@ import java.util.UUID;
 
 /**
  * Represents the Spectator
- * @author Luzifer
  */
 public interface Spectator {
 

@@ -1,6 +1,9 @@
 package de.luzifer.spectator.api.mode;
 
 import de.luzifer.spectator.api.entity.player.Spectator;
+import lombok.NonNull;
+
+import java.util.List;
 
 /**
  * Represents a SpectateMode
@@ -11,23 +14,19 @@ public abstract class SpectateMode {
     public SpectateMode(){}
 
     /**
-     * Do something when the SpectateMode gets registered and enabled
-     * For example register an EventListener
-     */
-    public abstract void onEnable();
-
-    /**
-     * Returns the description of the SpectateMode
+     * Returns the description of the SpectateMode as list
      *
-     * @return the description of the SpectateMode
+     * @return the description of the SpectateMode as list
      */
-    public abstract String getDescription();
+    @NonNull
+    public abstract List<String> getDescription();
 
     /**
      * Returns the name of the SpectateMode
      *
      * @return the name of the SpectateMode
      */
+    @NonNull
     public abstract String getName();
 
     /**
@@ -56,11 +55,15 @@ public abstract class SpectateMode {
      *
      * @return the raw description
      */
-    public String getRawDescription() {
+    public List<String> getRawDescription() {
 
-        String currentDescription = getDescription();
-        currentDescription = currentDescription.replaceAll("§([0-fk-or])", "");
-        currentDescription = currentDescription.replaceAll("[^a-zA-Z0-9 ]", "");
+        List<String> currentDescription = getDescription();
+
+        for(String s : getDescription()) {
+            s = s.replaceAll("§([0-fk-or])", "");
+            s = s.replaceAll("[^a-zA-Z0-9 ]", "");
+            currentDescription.add(s);
+        }
 
         return currentDescription;
     }
