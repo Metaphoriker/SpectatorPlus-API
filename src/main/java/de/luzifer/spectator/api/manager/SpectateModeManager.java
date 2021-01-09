@@ -24,7 +24,7 @@ public interface SpectateModeManager {
      * @param spectateMode the SpectateMode to register
      */
     @NonNull
-    void register(SpectateMode spectateMode) throws DuplicateModeNameException;
+    void register(SpectateMode spectateMode);
 
     /**
      * Deregister(unregister) a SpectateMode so it won't work anymore
