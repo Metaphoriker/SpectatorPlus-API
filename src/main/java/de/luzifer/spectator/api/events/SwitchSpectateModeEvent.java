@@ -64,15 +64,11 @@ public class SwitchSpectateModeEvent extends Event implements Cancellable {
     }
 
     public boolean isCancelled() {
-
         return isCancelled;
-
     }
 
     public void setCancelled(boolean cancelled) {
-
         isCancelled = cancelled;
-
     }
 
     @Override
@@ -81,9 +77,7 @@ public class SwitchSpectateModeEvent extends Event implements Cancellable {
     }
 
     public static HandlerList getHandlerList() {
-
         return HANDLERS;
-
     }
 
 }

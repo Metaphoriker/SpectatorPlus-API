@@ -1,6 +1,5 @@
 package de.luzifer.spectator.api.manager;
 
-import de.luzifer.spectator.api.exceptions.DuplicateModeNameException;
 import de.luzifer.spectator.api.mode.SpectateMode;
 import lombok.NonNull;
 
