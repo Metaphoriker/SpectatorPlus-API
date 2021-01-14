@@ -139,9 +139,11 @@ CameraManager cameraManager = SPApi.getCameraManager();
 SpectateModeManager specateModeManager = SPApi.getSpectateModeManager();
 ```
 
-### Do something when a Spectator switch his SpectateMode
+### Custom Events
 
-I've also implemented a new Event, which gets fired, when a Spectator changes his SpectateMode.
+There are a total of 4 Custom Events
+
+#### Do something when a Spectator switch his SpectateMode
 
 ```java
 @EventHandler
@@ -152,3 +154,37 @@ public void onSwitch(SwitchSpectateModeEvent event) {
 }
 ```
 
+#### Do something when a Spectator starts spectating
+
+```java
+@EventHandler
+public void onStart(StartSpectatingEvent event) {
+
+// do something
+
+}
+```
+
+#### Do something when a Spectator stops spectating
+
+
+```java
+@EventHandler
+public void onStop(StopSpectatingEvent event) {
+
+// do something
+
+}
+```
+
+#### Do something when a Spectator switch his Target
+
+
+```java
+@EventHandler
+public void onSwitchTarget(SwitchTargetEvent event) {
+
+// do something
+
+}
+```
