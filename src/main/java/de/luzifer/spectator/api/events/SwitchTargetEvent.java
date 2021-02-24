@@ -48,6 +48,15 @@ public class SwitchTargetEvent extends Event implements Cancellable {
         return targetAfter;
     }
 
+    /**
+     * Set the next target manually
+     *
+     * @param targetAfter the target which is gonna be the next target
+     */
+    public void setTargetAfter(Player targetAfter) {
+        this.targetAfter = targetAfter;
+    }
+
     public boolean isCancelled() {
         return isCancelled;
     }

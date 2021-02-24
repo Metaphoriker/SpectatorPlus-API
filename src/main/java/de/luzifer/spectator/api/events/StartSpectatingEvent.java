@@ -40,6 +40,15 @@ public class StartSpectatingEvent extends Event implements Cancellable {
     }
 
     /**
+     * Set the first target
+     *
+     * @param target the target which is gonna be spected
+     */
+    public void setTarget(Player target) {
+        this.target = target;
+    }
+
+    /**
      * @return the Spectator which started spectating
      */
     public Spectator getSpectator() {
